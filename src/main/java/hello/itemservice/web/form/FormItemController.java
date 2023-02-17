@@ -28,7 +28,7 @@ public class FormItemController {
      *
      * @Controller 시작할 때 자동으로 model에 addAttribute됨
      */
-    @ModelAttribute("regions") //자바 코드
+    @ModelAttribute("regions")
     public Map<String, String> regions() {
         Map<String, String> regions = new LinkedHashMap<>(); //hashMap은 순서 보장이 안됨!
         regions.put("SEOUL", "서울"); //"SEOUL": 시스템상 key, "서울": 사용자에게 보이는 값
